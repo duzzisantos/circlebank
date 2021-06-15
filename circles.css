@@ -1,0 +1,356 @@
+body {
+    font-family: "Montserrat", sans-serif;
+}
+
+h1 {
+    color: purple;
+    font-size: 40px;
+}
+
+h2 {
+    font-size: 25px;
+    margin-left: 5px;
+}
+h3{
+    font-size: 25px;
+    color: purple;
+    text-align: center;
+    font-weight: 800;
+}
+
+h4{
+    font-size: 15px;
+    margin-left: 4px;
+}
+p{
+    font-size: 18px;
+    margin-top: 15px;
+    margin-left: 5px;
+}
+
+/**THE BUTTONS AND THEIRHOVERS **/
+button {
+    width: 120px;
+    padding: 15px;
+    border-radius: 50px;
+    border: none;
+    color: purple;
+    margin-left: 5px;
+    font-size: 15px;
+    font-weight: 700;
+    font-style: "Montserrat", sans-serif;
+}
+
+button:hover{
+    color: gold;
+    cursor: pointer;
+}
+
+#num2 button, #num3 button, #num10 button{
+    background-color:whitesmoke;
+    color: purple;
+}
+
+#num2 button:hover, #num3 button:hover, #num10 button:hover{
+    color: gold;
+    cursor: pointer;
+}
+
+#num3 button a {
+    color: purple;
+    text-decoration-line: none;
+}
+
+
+/** THE NAVBAR **/ 
+nav {
+    height: 10vh;
+    background-color: gold;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    width: 50%;
+    height: 100%;
+    justify-content: space-around;
+    align-items: center;
+    margin-left: auto;
+    background-color: purple;
+}
+
+.nav-links li a {
+    font-size: 24px;
+    color: white;
+    text-decoration-line: none;
+}
+.nav-links li a:hover{
+    color: gold;
+}
+
+
+/** THE DIVS FOR THE MAIN CONTENT **/
+
+#num2, #num3, #num10{
+    color: purple;
+    overflow: hidden;
+    height: 450px;
+    width: 595px;
+    border: 1px solid whitesmoke;
+    display: inline-block;
+    overflow: hidden;
+    margin-top: 15px;
+    margin-left: 40px;
+    margin-bottom: 15px;
+}
+
+#num1, #num4, #num9{
+    color: white;
+    background-color: purple;
+    overflow: hidden;
+    height: 450px;
+    width: 595px;
+    display: inline-block;
+    overflow: hidden;
+    margin-top: 15px;
+    margin-left: 40px;
+    margin-bottom: 15px;
+}
+
+#num5, #num6, #num7, #num8 {
+    height: 250px;
+    width: 250px;
+    display: inline-flex;
+    border: 1px solid whitesmoke;
+    margin: 37px;
+    overflow: hidden;
+}
+
+#num5 h4:hover, #num6 h4:hover, #num7 h4:hover, #num8 h4:hover{
+    cursor: pointer;
+}
+#num5{
+    background-image: url("https://images.unsplash.com/photo-1501167786227-4cba60f6d58f?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8YmFua3xlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60");
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    color: purple;
+}
+
+#num6 {
+    background-image: url("https://images.unsplash.com/photo-1567427017947-545c5f8d16ad?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8YmFua3xlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60");
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    color: purple;
+}
+
+#num7 {
+    background-image: url("https://www.freevector.com/uploads/vector/preview/30642/Privacy_Guard.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;  
+    color: purple;
+}
+
+
+#num8 {
+    background-image: url("https://images.unsplash.com/photo-1577915207354-8f266a3fc016?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzN8fGJhbmt8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60");
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden; 
+    color: purple; 
+}
+hr {
+    border: 1px solid gold;
+    border-radius: 50px;
+    width: 50%;
+}
+
+
+/** THESE ARE THE INNER DIVS IN #NUM1.....#NUM10 **/
+
+#mastercard {
+    height: 210px;
+    width: 595px;
+    background-color: whitesmoke;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    background-image: url("https://images.all-free-download.com/images/graphiclarge/credit_card_vector_illustration_with_holding_hand_6825041.jpg");
+}
+
+#insurance {
+    height: 210px;
+    width: 595px;
+    background-color: white;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    background-image: url("https://image.freepik.com/free-vector/illustration-various-insurance-policies_53876-43951.jpg");
+}
+
+#mortgage {
+    height: 210px;
+    width: 595px;
+    background-color: white;
+    background-image: url("https://img.graphicsurf.com/2020/10/mortgage-vector-free-flat-illustration.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+#fintech1 {
+    height: 210px;
+    width: 595px;
+    background-color: white;
+    background-image: url("https://img.graphicsurf.com/2020/10/mortgage-vector-free-flat-illustration.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+#calculator {
+    height: 210px;
+    width: 595px;
+    background-color: white;
+    background-image: url("https://static.vecteezy.com/system/resources/thumbnails/001/908/126/small_2x/calculator-with-businessman-and-pile-coins-free-vector.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+#apex {
+    height: 210px;
+    width: 595px;
+    background-color: white;
+    background-image: url("https://images.unsplash.com/photo-1521791055366-0d553872125f?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+
+/** THE FOOTER **/
+#footers {
+    color: purple;
+    display: inline;
+    overflow: hidden;
+    height: 300px;
+    width: 1330px;
+    margin-top: 50px;
+    text-align: center;
+    background-color: white;
+    margin-left: auto;
+}
+
+#footers a, #footers p {
+    text-decoration-line: none;
+    color: purple;
+    font-family: sans-serif;
+    margin-top: 40px;
+    text-align: left;
+    font-size: 12px;
+    margin: 14px;
+    margin-left: auto;
+}
+
+/** RESPONSIVENESS FOR THE NAVIGATION BARS **/
+
+@media screen and (max-width: 760px) {
+    .line {
+        width: 30px;
+        height: 3px;
+        background: white;
+        margin: 5px;
+    }
+    nav {
+        position: relative;
+    }
+    .hamburger {
+        position: absolute;
+        cursor: pointer;
+        right: 5%;
+        top: 20%;
+        transform: translate( -5%, -50%);
+        z-index: 2;
+    }
+    .nav-links {
+        position: sticky;
+        background-color:gold;
+        height: 20vh;
+        width: 100%;
+        text-align: center;
+        flex-direction: column;
+        clip-path: circle(100px at 90% - 10%);
+        transition: all 1s ease-out;
+        -webkit-clip-path: circle(100px at 90% - 10%);
+        transition: all 1s ease-out;
+        pointer-events: all;
+        display: none;
+    }
+    .nav-links.open {
+        clip-path: circle(1000px at 90% - 10%);
+        -webkit-clip-path: circle(1000px at 90% - 10%);
+        width: 100%;
+        display: block;
+    }
+    nav-links li {
+        opacity: 0;
+    }
+    .nav-links li a {
+        font-size: 21px;
+    }
+    .nav-links li:nth-child(1) {
+        transition: all 0.5s ease 0.2s;
+    }
+    .nav-links li:nth-child(2) {
+        transition: all 0.5s ease 0.4s;
+    }
+    .nav-links li:nth-child(3) {
+        transition: all 0.5s ease 0.6s;
+    }
+    .nav-links li:nth-child(4) {
+        transition: all 0.5s ease 0.6s;
+    }
+    .nav-links li:nth-child(5) {
+        transition: all 0.5s ease 0.6s;
+    }
+    li.fade {
+        opacity: 0.2;
+    }
+    #footers a, #footers p {
+        text-decoration-line: none;
+        color: purple;
+        font-family: sans-serif;
+        margin-top: 40px;
+        text-align: center;
+        font-size: 12px;
+        margin: 5px;
+        margin-left: 12px
+    }
+
+  
+    div {
+        transition: none;
+    }
+
+    #num2, #num3, #num10, #num1, #num4, #num9{
+        height: 450px;
+        width: 450px;
+        display: block;
+        margin-bottom: 5px;
+        margin-left: 8px;
+    }
+
+    hr{
+        border: 2px solid gold;
+        width: 50%;
+    }
+
+    #num5, #num6, #num7, #num8 {
+        width: 450px;
+        height: 200px;
+        margin-left: 2px;
+    }
+}

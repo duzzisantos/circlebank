@@ -1,0 +1,310 @@
+body {
+    font-family: "Montserrat", sans-serif;
+}
+
+h1 {
+    color: purple;
+    font-size: 40px;
+}
+
+h2 {
+    font-size: 25px;
+    margin-left: 5px;
+}
+h3{
+    font-size: 25px;
+    color: purple;
+    text-align: center;
+    font-weight: 800;
+}
+
+h4{
+    font-size: 15px;
+    margin-left: 4px;
+}
+p{
+    font-size: 18px;
+    margin-top: 15px;
+    margin-left: 5px;
+}
+
+/**THE BUTTONS AND THEIRHOVERS **/
+button {
+    width: 120px;
+    padding: 15px;
+    border-radius: 50px;
+    border: none;
+    color: purple;
+    margin-left: 5px;
+    font-size: 15px;
+    font-weight: 700;
+    font-style: "Montserrat", sans-serif;
+}
+
+button:hover{
+    color: gold;
+    cursor: pointer;
+}
+
+/** THE NAVBAR **/ 
+nav {
+    height: 10vh;
+    background-color: gold;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    width: 50%;
+    height: 100%;
+    justify-content: space-around;
+    align-items: center;
+    margin-left: auto;
+    background-color: purple;
+}
+
+.nav-links li a {
+    font-size: 24px;
+    color: white;
+    text-decoration-line: none;
+}
+.nav-links li a:hover{
+    color: gold;
+}
+
+
+#newsHead {
+    height: 110px;
+    width: 110px;
+    background-color: white;
+    transition: margin-left 4s;
+    display: inline-block;
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+
+#newsHead2 {
+    height: 110px;
+    width: 110px;
+    background-color: white;
+    transition: margin-left 4s;
+    display: inline-block;
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+
+#head:hover #newsHead {
+    border-radius: 50%;
+    background-color: purple;
+    transition-timing-function: ease-in;
+    color: white;
+    margin-left: 1070px;
+}
+
+#head:hover #newsHead2 {
+    border-radius: 50%;
+    background-color: purple;
+    transition-timing-function: ease-in;
+    color: white;
+}
+
+#head:hover #newsHead h3 {
+    color: white;
+}
+
+#head:hover #newsHead2 h3 {
+    color: white;
+}
+
+
+#newsHead h3 {
+    color: white;
+    padding: 30px 10px;
+    text-align: center;
+    font-size: 16px;
+}
+
+#newsHead2 h3 {
+    color: white;
+    padding: 30px 10px;
+    text-align: center;
+    font-size: 16px;
+}
+
+#newsHead3 {
+    height: 800px;
+    width: 400px;
+    background-color: whitesmoke;
+    display: inline-block;
+    overflow: hidden;
+    margin: 5px;
+    margin-top: 10px;
+}
+
+#newsHead3 p:hover {
+    color: purple;
+    cursor: pointer;
+}
+
+#newsHead4 {
+    height: 800px;
+    width: 900px;
+    background-color: whitesmoke;
+    display: inline-block;
+    overflow: hidden;
+    margin: 5px;
+    margin-top: 10px;
+}
+
+#newsHead4 h5 {
+    color: purple;
+    font-size: 19.5px;
+    margin-left: 7px;
+}
+
+#newsHead4 p {
+    color: rgb(110, 107, 110);
+    font-size: 16px;
+    margin-left: 7px;
+}
+
+#newsHead4 h6 {
+    color: black;
+    font-size: 12px;
+    margin-left: 7px;
+    margin-top: -20px;
+}
+ #titleBar {
+    height: 45px;
+    width: 400px;
+    color: white;
+    background-color: purple;
+    display: inline-flex;
+    font-family: sans-serif;
+    padding: 15px 90px;
+}
+
+#newsLatest {
+    height: 42.5px;
+    width: 900px;
+    border-bottom: 1px solid rgb(204, 204, 204);
+    color: rgb(110, 107, 110);
+    font-size: 17px;
+}
+
+
+#footers {
+    color: purple;
+    display: inline;
+    overflow: hidden;
+    height: 300px;
+    width: 1330px;
+    margin-top: 50px;
+    text-align: center;
+    background-color: white;
+    margin-left: auto;
+}
+
+#footers a, #footers p {
+    text-decoration-line: none;
+    color: purple;
+    font-family: sans-serif;
+    margin-top: 40px;
+    text-align: left;
+    font-size: 12px;
+    margin: 14px;
+    margin-left: auto;
+}
+
+hr {
+    border: 2px solid rgb(240, 239, 239);
+}
+
+/** RESPONSIVENESS FOR THE NAVIGATION BARS **/
+
+@media screen and (max-width: 760px) {
+    .line {
+        width: 30px;
+        height: 3px;
+        background: white;
+        margin: 5px;
+    }
+    nav {
+        position: relative;
+    }
+    .hamburger {
+        position: absolute;
+        cursor: pointer;
+        right: 5%;
+        top: 20%;
+        transform: translate( -5%, -50%);
+        z-index: 2;
+    }
+    .nav-links {
+        position: sticky;
+        background-color:gold;
+        height: 20vh;
+        width: 100%;
+        text-align: center;
+        flex-direction: column;
+        clip-path: circle(100px at 90% - 10%);
+        transition: all 1s ease-out;
+        -webkit-clip-path: circle(100px at 90% - 10%);
+        transition: all 1s ease-out;
+        pointer-events: all;
+        display: none;
+    }
+    .nav-links.open {
+        clip-path: circle(1000px at 90% - 10%);
+        -webkit-clip-path: circle(1000px at 90% - 10%);
+        width: 93%;
+        display: block;
+    }
+    nav-links li {
+        opacity: 0;
+    }
+    .nav-links li a {
+        font-size: 21px;
+    }
+    .nav-links li:nth-child(1) {
+        transition: all 0.5s ease 0.2s;
+    }
+    .nav-links li:nth-child(2) {
+        transition: all 0.5s ease 0.4s;
+    }
+    .nav-links li:nth-child(3) {
+        transition: all 0.5s ease 0.6s;
+    }
+    .nav-links li:nth-child(4) {
+        transition: all 0.5s ease 0.6s;
+    }
+    .nav-links li:nth-child(5) {
+        transition: all 0.5s ease 0.6s;
+    }
+    li.fade {
+        opacity: 0.2;
+    }
+    #footers a, #footers p {
+        text-decoration-line: none;
+        color: purple;
+        font-family: sans-serif;
+        margin-top: 40px;
+        text-align: center;
+        font-size: 12px;
+        margin: 5px;
+    }
+    div {
+        transition: none;
+    }
+
+    #newsHead3{
+        width: 468px;
+        align-items: center;
+        justify-content: center;
+        margin-left: 0;
+        margin-bottom: 5px;
+    }
+    #newsHead4 {
+        display: none;
+    }
+}

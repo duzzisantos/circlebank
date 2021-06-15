@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Circles</title>
+    <link rel="stylesheet" href="circlesCalc.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <h1>CIRCLE BANK</h1>
+
+    <nav>
+        <div class="hamburger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+
+        <ul class="nav-links">
+            <li><a href="circles.html" id="">Home</a></li>
+            <li><a href="circles2.html" id="">Services</a></li>
+            <li><a href="circles3.html" id="">Locations</a></li>
+            <li><a href="circles4.html" id="">News</a></li>
+            <li><a href="circles5.html" id="">Login</a></li>
+        </ul>
+    </nav>
+
+    <h2>Financial Calculators</h2>
+    <p>Calculate complex stuff like your interest contributions, certificate of deposit and mortgage.</p>
+    <hr>
+
+    <h2>Monthly Mortgage</h2>
+    <p>This calulates the monthly mortgage contribution</p>
+    <form action="">
+        <label for="principal">Loan Balance:</label>
+        <input type="number" id="loan" oninput="mGage()">
+        <label for="interest Rate">Interest Rate in Decimals:</label>
+        <input type="number" id="iRates" oninput="mGage()">
+        <label for="months">Number of Months Left:</label>
+        <input type="number" id="monthsLeft" oninput="mGage()">
+        <label for="mortgage">Monthly Mortgage</label>
+        <input type="number" id="mortGages" oninput="mGage()">
+        <input type="reset" id="reset" value="Reset">
+    </form>
+    <hr>
+    <h2>Certificate of Deposit</h2>
+    <p>This calculates the payout received from a fixed-deposit savings account.</p>
+    <form action="">
+        <label for="principal">Principal:</label>
+        <input type="number" oninput="cd()" id="principal4">
+        <label for="rate">Interest Rate in Decimals:</label>
+        <input type="number" oninput="cd()" id="rate4">
+        <label for="time">Time in Years:</label>
+        <input type="number" oninput="cd()" id="time4">
+        <label for="frequency">Compounding Frequency:</label>
+        <input type="number" oninput="cd()" id="frequency4">
+        <label for="result">Certificate of Deposit:</label>
+        <input type="number" oninput="cd()" id="result4">
+        <input type="reset" value="Reset" id="reset">
+    </form>
+    <hr>
+    <h2>Simple Interest Calculator</h2>
+    <p>Fill in the following fields with numbers only.</p>
+    <form action="">
+        <label for="principal">Principal:</label>
+        <input type="number"  id="principal" oninput="compute()">
+        <label for="rate">Interest Rate in Decimals:</label>
+        <input type="number"  id="rate" oninput="compute()">
+        <label for="time">Time in Days:</label>
+        <input type="number"  id="time" oninput="compute()">
+        <label for="simpleInterest">Simple Interest:</label>
+        <input type="number"  id="answer" oninput="compute()">
+        <input type="reset" value="Reset" id="reset">
+    </form>
+
+
+
+
+    <div id="footers">
+        <a href="">Legal</a>
+        <a href="">Privacy Policy</a>
+        <a href="">Investor Relations</a>
+        <a href="">Careers</a>
+        <a href="">Partners</a>
+        <a href="">Our Team</a>
+        <p>All rights reserved 2021. Circle Bank.</p>
+    </div>
+    <script src="circles.js"></script>
+</body>
+
+</html>

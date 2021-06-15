@@ -1,0 +1,240 @@
+body {
+    font-family: "Montserrat", sans-serif;
+}
+
+h1 {
+    color: purple;
+    font-size: 40px;
+}
+
+h2 {
+    font-size: 25px;
+    margin-left: 5px;
+}
+
+h3 {
+    font-size: 25px;
+    color: purple;
+    text-align: center;
+    font-weight: 800;
+}
+
+h4 {
+    font-size: 15px;
+    margin-left: 4px;
+}
+
+p {
+    font-size: 18px;
+    margin-top: 15px;
+    margin-left: 5px;
+}
+
+/**THE BUTTONS AND THEIRHOVERS **/
+
+button {
+    width: 120px;
+    padding: 15px;
+    border-radius: 50px;
+    border: none;
+    color: purple;
+    margin-left: 5px;
+    font-size: 15px;
+    font-weight: 700;
+    font-style: "Montserrat", sans-serif;
+}
+
+button:hover {
+    color: gold;
+    cursor: pointer;
+}
+
+/** THE NAVBAR **/
+
+nav {
+    height: 10vh;
+    background-color: gold;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    width: 50%;
+    height: 100%;
+    justify-content: space-around;
+    align-items: center;
+    margin-left: auto;
+    background-color: purple;
+}
+
+.nav-links li a {
+    font-size: 24px;
+    color: white;
+    text-decoration-line: none;
+}
+
+.nav-links li a:hover {
+    color: gold;
+}
+
+h2, p {
+    margin: 20px;
+    color: purple;
+}
+
+input {
+    height: 30px;
+    width: 400px;
+    margin: 20px;
+    border-radius: 50px;
+    border: none;
+    display: block;
+    background: whitesmoke;
+    color: black;
+    text-align: center;
+    font-size: 18px;
+}
+
+input::placeholder {
+    padding-left: 8px;
+}
+
+input:focus {
+    outline: none;
+}
+
+#reset {
+    background-color: purple;
+    color: white;
+    width: 120px;
+    border-radius: 50px;
+    font-size: 15px;
+    font-family: "Montserrat", sans-serif;
+}
+
+button {
+    height: 37px;
+    width: 100px;
+    border-radius: 50px;
+    border: none;
+    background-color: purple;
+    color: white;
+    font-weight: 700;
+}
+
+button:focus {
+    outline: none;
+}
+
+p {
+    margin: 20px;
+}
+
+label {
+    display: block;
+    font-weight: 600;
+    margin: 0px;
+    margin-left: 20px;
+    color: purple;
+}
+
+/** THE FOOTER **/
+
+#footers {
+    color: purple;
+    display: inline;
+    overflow: hidden;
+    height: 300px;
+    width: 1330px;
+    margin-top: 50px;
+    text-align: center;
+    background-color: white;
+    margin-left: auto;
+}
+
+#footers a, #footers p {
+    text-decoration-line: none;
+    color: purple;
+    font-family: sans-serif;
+    margin-top: 40px;
+    text-align: left;
+    font-size: 12px;
+    margin: 14px;
+    margin-left: auto;
+}
+
+/** RESPONSIVENESS FOR THE NAVIGATION BARS **/
+
+@media screen and (max-width: 760px) {
+    .line {
+        width: 30px;
+        height: 3px;
+        background: white;
+        margin: 5px;
+    }
+    nav {
+        position: relative;
+    }
+    .hamburger {
+        position: absolute;
+        cursor: pointer;
+        right: 5%;
+        top: 20%;
+        transform: translate( -5%, -50%);
+        z-index: 2;
+    }
+    .nav-links {
+        position: sticky;
+        background-color: gold;
+        height: 20vh;
+        width: 100%;
+        text-align: center;
+        flex-direction: column;
+        clip-path: circle(100px at 90% - 10%);
+        transition: all 1s ease-out;
+        -webkit-clip-path: circle(100px at 90% - 10%);
+        transition: all 1s ease-out;
+        pointer-events: all;
+        display: none;
+    }
+    .nav-links.open {
+        clip-path: circle(1000px at 90% - 10%);
+        -webkit-clip-path: circle(1000px at 90% - 10%);
+        width: 100%;
+        display: block;
+    }
+    nav-links li {
+        opacity: 0;
+    }
+    .nav-links li a {
+        font-size: 21px;
+    }
+    .nav-links li:nth-child(1) {
+        transition: all 0.5s ease 0.2s;
+    }
+    .nav-links li:nth-child(2) {
+        transition: all 0.5s ease 0.4s;
+    }
+    .nav-links li:nth-child(3) {
+        transition: all 0.5s ease 0.6s;
+    }
+    .nav-links li:nth-child(4) {
+        transition: all 0.5s ease 0.6s;
+    }
+    .nav-links li:nth-child(5) {
+        transition: all 0.5s ease 0.6s;
+    }
+    li.fade {
+        opacity: 0.2;
+    }
+    #footers a, #footers p {
+        text-decoration-line: none;
+        color: purple;
+        font-family: sans-serif;
+        margin-top: 40px;
+        text-align: center;
+        font-size: 12px;
+        margin: 5px;
+        margin-left: 12px
+    }
+}

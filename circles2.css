@@ -1,0 +1,395 @@
+body {
+    font-family: "Montserrat", sans-serif;
+}
+
+h1 {
+    color: purple;
+    font-size: 40px;
+}
+
+h2 {
+    font-size: 25px;
+    margin-left: 5px;
+}
+h3{
+    font-size: 25px;
+    color: purple;
+    text-align: center;
+    font-weight: 800;
+}
+
+h4{
+    font-size: 15px;
+    margin-left: 4px;
+}
+p{
+    font-size: 18px;
+    margin-top: 15px;
+    margin-left: 5px;
+}
+
+/**THE BUTTONS AND THEIRHOVERS **/
+button {
+    width: 120px;
+    padding: 15px;
+    border-radius: 50px;
+    border: none;
+    color: purple;
+    margin-left: 5px;
+    font-size: 15px;
+    font-weight: 700;
+    font-style: "Montserrat", sans-serif;
+}
+
+button:hover{
+    color: gold;
+    cursor: pointer;
+}
+
+nav {
+    height: 10vh;
+    background-color: gold;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    width: 50%;
+    height: 100%;
+    justify-content: space-around;
+    align-items: center;
+    margin-left: auto;
+    background-color: purple;
+}
+
+.nav-links li a {
+    font-size: 24px;
+    color: white;
+    text-decoration-line: none;
+}
+.nav-links li a:hover{
+    color: gold;
+}
+
+.row {
+    height: 500px;
+    width: 1000px;
+    border: none;
+    margin-top: 52px;
+    margin-left: 165px;
+}
+
+#info1a, #info1b, #info1c, #info1d {
+    height: 245px;
+    width: 495px;
+    background-color: whitesmoke;
+    display: inline-block;
+    overflow: hidden;
+    color: purple;
+    font-size: 25px;
+}
+#info2a, #info2b, #info2c, #info2d {
+    height: 245px;
+    width: 495px;
+    background-color: whitesmoke;
+    display: inline-block;
+    overflow: hidden;
+    color: purple;
+    font-size: 25px;
+}
+
+#info1a:hover, #info1b:hover,#info1c:hover, #info1d:hover {
+    background-color: gold;
+    cursor: pointer;
+}
+#info2a:hover, #info2b:hover,#info2c:hover, #info2d:hover {
+    background-color: gold;
+    cursor: pointer;
+}
+
+hr {
+    border: 1px solid aliceblue;
+}
+
+#creditCard {
+    height: 600px;
+    background-color: black;
+    width: 100%;
+    margin-top: 20px;
+}
+
+#card1 {
+    height: 500px;
+    width: 350px;
+    display: inline-block;
+    margin-left: 50px;
+    margin-top: 50px;
+    overflow: hidden;
+}
+
+#card1 button {
+    height: 50px;
+    width: 220px;
+    margin: 65px;
+    background-color: purple;
+    border: none;
+    border-radius: 50px;
+    color: whitesmoke;
+    font-size: 20px;
+    font-family: "Montserrat", sans-serif;
+}
+
+#card1 button:hover {
+    color: gold;
+    cursor: pointer;
+}
+
+#card1 h4 {
+    color: whitesmoke;
+    text-align: center;
+    font-size: 30px;
+}
+
+#card2 {
+    height: 500px;
+    width: 850px;
+    display: inline-block;
+    background-image: url("card1AA.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    overflow: hidden;
+}
+
+#customerCare {
+    height: 600px;
+    width: 100%;
+    background-color: whitesmoke;
+}
+
+#care1 {
+    height: 500px;
+    width: 420px;
+    margin-top: 40px;
+    display: inline-block;
+    margin-left: 120px;
+    margin-right: 120px;
+    overflow: hidden;
+}
+
+#care1 h4 {
+    color: purple;
+    text-align: center;
+    font-size: 30px;
+}
+
+#care1 button {
+    height: 50px;
+    width: 220px;
+    margin: 85px;
+    background-color: purple;
+    border: none;
+    border-radius: 50px;
+    color: whitesmoke;
+    font-size: 20px;
+}
+
+#care1 button a {
+    color: whitesmoke;
+    text-decoration-line: none;
+    font-family: "Montserrat", sans-serif;
+}
+
+#care1 button a:hover {
+    color: gold;
+    cursor: pointer;
+}
+
+#care2 {
+    height: 500px;
+    width: 420px;
+    margin-top: 40px;
+    margin-left: 120px;
+    display: inline-block;
+    overflow: hidden;
+    background-image: url("care2.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.footer {
+    background-color: black;
+}
+
+#footers {
+    color: purple;
+    display: inline;
+    overflow: hidden;
+    height: 300px;
+    width: 1330px;
+    margin-top: 50px;
+    text-align: center;
+    background-color: white;
+    margin-left: auto;
+}
+
+#footers a, #footers p {
+    text-decoration-line: none;
+    color: purple;
+    font-family: sans-serif;
+    margin-top: 40px;
+    text-align: left;
+    font-size: 12px;
+    margin: 14px;
+    margin-left: auto;
+}
+/** RESPONSIVENESS FOR THE NAVIGATION BARS **/
+
+@media screen and (max-width: 760px) {
+    .line {
+        width: 30px;
+        height: 3px;
+        background: white;
+        margin: 5px;
+    }
+    nav {
+        position: relative;
+    }
+    .hamburger {
+        position: absolute;
+        cursor: pointer;
+        right: 5%;
+        top: 20%;
+        transform: translate( -5%, -50%);
+        z-index: 2;
+    }
+    .nav-links {
+        position: sticky;
+        background-color:gold;
+        height: 20vh;
+        width: 100%;
+        text-align: center;
+        flex-direction: column;
+        clip-path: circle(100px at 90% - 10%);
+        transition: all 1s ease-out;
+        -webkit-clip-path: circle(100px at 90% - 10%);
+        transition: all 1s ease-out;
+        pointer-events: all;
+        display: none;
+    }
+    .nav-links.open {
+        clip-path: circle(1000px at 90% - 10%);
+        -webkit-clip-path: circle(1000px at 90% - 10%);
+        width: 100%;
+        display: block;
+    }
+    nav-links li {
+        opacity: 0;
+    }
+    .nav-links li a {
+        font-size: 21px;
+    }
+    .nav-links li:nth-child(1) {
+        transition: all 0.5s ease 0.2s;
+    }
+    .nav-links li:nth-child(2) {
+        transition: all 0.5s ease 0.4s;
+    }
+    .nav-links li:nth-child(3) {
+        transition: all 0.5s ease 0.6s;
+    }
+    .nav-links li:nth-child(4) {
+        transition: all 0.5s ease 0.6s;
+    }
+    .nav-links li:nth-child(5) {
+        transition: all 0.5s ease 0.6s;
+    }
+    li.fade {
+        opacity: 0.2;
+    }
+    #footers a, #footers p {
+        text-decoration-line: none;
+        color: purple;
+        font-family: sans-serif;
+        margin-top: 40px;
+        text-align: center;
+        font-size: 12px;
+        margin: 5px;
+    }
+    /* div {
+        transition: none;
+    } */
+    #info1a, #info1b, #info1c, #info1d{
+        height: 200px;
+        width: 450px;
+        display: block;
+        font-size: 10px;
+        margin: 4px;
+        overflow: hidden;
+        margin-left: -156px;
+    }
+    #info2a, #info2b, #info2c, #info2d{
+        height: 180px;
+        width: 450px;
+        display: block;
+        font-size: 10px;
+        margin: 4px;
+        overflow: hidden;
+        margin-left: -156px;
+    }
+
+    .row {
+        height: 800px;
+        width: 450px;
+    }
+    hr{
+        margin-top: 50px;
+    }
+    #creditCard{
+        height: 400px;
+        width: 450px;
+        overflow: hidden;
+        margin-left: 10px;
+        background-image: url("card1AA.png");
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+    }
+    #card1{
+        height: 300px;
+        width: 450px;
+        margin-left: 2px;
+    }
+
+    #card1 h4{
+        font-size: 28px;
+        text-align: left;
+    }
+
+    #card1 button{
+        margin-left: 100px;
+    }
+    #card2{
+        display: none;
+    }
+    #customerCare {
+        height: 400px;
+        width: 450px;
+        margin-left: 10px;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+    #care1{
+        height: 400px;
+        width: 450px;
+        margin-left: 0;
+        margin-top: 10px;
+    }
+
+    #care1 button{
+        margin-left: 100px;
+    }
+    #care2 {
+        display: none;
+    }
+}
+ 

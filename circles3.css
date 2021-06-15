@@ -1,0 +1,335 @@
+body {
+    font-family: "Montserrat", sans-serif;
+}
+
+h1 {
+    color: purple;
+    font-size: 40px;
+}
+
+h2 {
+    font-size: 25px;
+    margin-left: 5px;
+}
+
+h3 {
+    font-size: 25px;
+    color: purple;
+    text-align: center;
+    font-weight: 800;
+}
+
+h4 {
+    font-size: 15px;
+    margin-left: 4px;
+}
+
+p {
+    font-size: 18px;
+    margin-top: 15px;
+    margin-left: 5px;
+}
+
+/**THE BUTTONS AND THEIRHOVERS **/
+
+button {
+    width: 120px;
+    padding: 15px;
+    border-radius: 50px;
+    border: none;
+    color: purple;
+    margin-left: 5px;
+    font-size: 15px;
+    font-weight: 700;
+    font-style: "Montserrat", sans-serif;
+}
+
+button:hover {
+    color: gold;
+    cursor: pointer;
+}
+
+/** THE NAVBAR **/
+
+nav {
+    height: 10vh;
+    background-color: gold;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    width: 50%;
+    height: 100%;
+    justify-content: space-around;
+    align-items: center;
+    margin-left: auto;
+    background-color: purple;
+}
+
+.nav-links li a {
+    font-size: 24px;
+    color: white;
+    text-decoration-line: none;
+}
+
+.nav-links li a:hover {
+    color: gold;
+}
+
+#location1 {
+    height: 160px;
+    /* background-image: url("location1.png"); */
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-top: 15px;
+}
+
+#loc1a, #loc1b, #loc1c {
+    height: 150px;
+    width: 150px;
+    background-color: gold;
+    display: inline-flex;
+    transition: margin-left 4s;
+}
+
+#location1 h5 {
+    font-size: 17px;
+    padding: 40px;
+    text-align: center;
+    color: whitesmoke;
+}
+
+#loc1a h5, #loc1b h5, #loc1c h5 {
+    display: none;
+}
+
+#location1:hover #loc1a h5 {
+    display: block;
+    text-align: center;
+    padding: 38px;
+}
+
+#location1:hover #loc1b h5 {
+    display: block;
+    text-align: center;
+    padding: 38px;
+}
+
+#location1:hover #loc1c h5 {
+    display: block;
+    text-align: center;
+    padding: 38px;
+}
+
+#location1:hover #loc1a {
+    transition-timing-function: ease-in;
+    margin-left: 800px;
+    border-radius: 50%;
+    background-color: purple;
+}
+
+#location1:hover #loc1b {
+    border-radius: 50%;
+    background-color: purple;
+}
+
+#location1:hover #loc1c {
+    border-radius: 50%;
+    background-color: purple;
+}
+
+#loc2a, #loc2b, #loc2c {
+    width: 350px;
+    height: 350px;
+    margin: 35px;
+    padding: 9px;
+    font-size: 20px;
+    display: inline-block;
+    overflow: hidden;
+    color: purple;
+    margin-top: 4px;
+}
+
+#loc3a, #loc3b, #loc3c {
+    width: 350px;
+    height: 350px;
+    margin: 35px;
+    padding: 9px;
+    font-size: 20px;
+    display: inline-block;
+    overflow: hidden;
+    color: purple;
+}
+
+#loc4a, #loc4b, #loc4c {
+    width: 350px;
+    height: 350px;
+    margin: 35px;
+    padding: 9px;
+    font-size: 20px;
+    display: inline-block;
+    overflow: hidden;
+    color: purple;
+}
+
+#loc5a, #loc5b, #loc5c {
+    width: 350px;
+    height: 350px;
+    margin: 35px;
+    padding: 9px;
+    font-size: 20px;
+    display: inline-block;
+    overflow: hidden;
+    color: purple;
+}
+
+#loc6a, #loc6b, #loc6c {
+    width: 350px;
+    height: 350px;
+    margin: 35px;
+    padding: 9px;
+    font-size: 20px;
+    display: inline-block;
+    overflow: hidden;
+    color: purple;
+}
+
+#loc7a, #loc7b, #loc7c {
+    width: 350px;
+    height: 350px;
+    margin: 35px;
+    padding: 9px;
+    font-size: 20px;
+    display: inline-block;
+    overflow: hidden;
+    color: purple;
+}
+
+#loc2c, #loc3c, #loc4c, #loc5c, #loc6c, #loc7c {
+    border-right: 2px solid rgb(228, 225, 225);
+}
+
+h3 {
+    text-decoration-line: underline;
+}
+
+#footers {
+    color: purple;
+    display: inline;
+    overflow: hidden;
+    height: 300px;
+    width: 1330px;
+    margin-top: 50px;
+    text-align: center;
+    background-color: white;
+    margin-left: auto;
+}
+
+#footers a, #footers p {
+    text-decoration-line: none;
+    color: purple;
+    font-family: sans-serif;
+    margin-top: 40px;
+    text-align: left;
+    font-size: 12px;
+    margin: 14px;
+    margin-left: auto;
+}
+
+hr {
+    border: 2px solid rgb(240, 239, 239);
+}
+
+/** RESPONSIVENESS FOR THE NAVIGATION BARS **/
+
+@media screen and (max-width: 760px) {
+    .line {
+        width: 30px;
+        height: 3px;
+        background: white;
+        margin: 5px;
+    }
+    nav {
+        position: relative;
+    }
+    .hamburger {
+        position: absolute;
+        cursor: pointer;
+        right: 5%;
+        top: 20%;
+        transform: translate( -5%, -50%);
+        z-index: 2;
+    }
+    .nav-links {
+        position: sticky;
+        background-color: gold;
+        height: 20vh;
+        width: 100%;
+        text-align: center;
+        flex-direction: column;
+        clip-path: circle(100px at 90% - 10%);
+        transition: all 1s ease-out;
+        -webkit-clip-path: circle(100px at 90% - 10%);
+        transition: all 1s ease-out;
+        pointer-events: all;
+        display: none;
+    }
+    .nav-links.open {
+        clip-path: circle(1000px at 90% - 10%);
+        -webkit-clip-path: circle(1000px at 90% - 10%);
+        width: 93%;
+        display: block;
+    }
+    .nav-links.open:hover{
+        color: purple;
+    }
+    nav-links li {
+        opacity: 0;
+    }
+    .nav-links li a {
+        font-size: 21px;
+    }
+    .nav-links li:nth-child(1) {
+        transition: all 0.5s ease 0.2s;
+    }
+    .nav-links li:nth-child(2) {
+        transition: all 0.5s ease 0.4s;
+    }
+    .nav-links li:nth-child(3) {
+        transition: all 0.5s ease 0.6s;
+    }
+    .nav-links li:nth-child(4) {
+        transition: all 0.5s ease 0.6s;
+    }
+    .nav-links li:nth-child(5) {
+        transition: all 0.5s ease 0.6s;
+    }
+    li.fade {
+        opacity: 0.2;
+    }
+    #footers a, #footers p {
+        text-decoration-line: none;
+        color: purple;
+        font-family: sans-serif;
+        margin-top: 40px;
+        text-align: center;
+        font-size: 12px;
+        margin: 5px;
+    }
+    div {
+        transition: none;
+    }
+    #location1 {
+        display: none;
+    }
+    #loc2c, #loc3c, #loc4c, #loc5c, #loc6c, #loc7c {
+        border-right: none;
+    }
+    #loc2a, #loc2b, #loc2c, #loc3a, #loc3b, #loc3c, #loc4a, #loc4b, #loc4c,#loc5a, #loc5b, #loc5c, #loc6a, #loc6b, #loc6c, #loc7a, #loc7b, #loc7c{
+        height: 220px;
+        margin-left: 50px;
+        font-size: 10px;
+        margin-bottom: 3px;
+    }
+}
